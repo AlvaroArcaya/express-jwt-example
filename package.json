@@ -1,0 +1,29 @@
+{
+  "name": "express-jwt-example",
+  "version": "1.0.0",
+  "repository": "git@github.com:AlvaroArcaya/express-jwt-example.git",
+  "author": "Álvaro Arcaya <alvaro.arcaya@gmail.com>",
+  "license": "MIT",
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  },
+  "scripts": {
+    "start": "npx nodemon -r esm -r dotenv/config src/server.js"
+  }
+}
