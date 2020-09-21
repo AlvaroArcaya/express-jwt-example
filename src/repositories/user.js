@@ -16,15 +16,3 @@ export const create = (newUser) => {
 };
 
 export const get = (filter) => users.find(search, filter);
-
-export const update = (updatedUser) => {
-  users = users.map((user) => (user.id === updatedUser.id ? { ...user, ...updatedUser } : user));
-
-  return users.find(({ id }) => id === updatedUser.id);
-};
-
-export const remove = (userId) => {
-  users = users.filter(({ id }) => id !== userId);
-
-  return;
-};

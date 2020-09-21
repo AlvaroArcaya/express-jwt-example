@@ -36,7 +36,3 @@ export const me = (req, res) => {
     });
   }
 };
-
-export const signout = (req, res) => {
-  res.send('signout');
-};
