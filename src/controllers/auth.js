@@ -1,4 +1,4 @@
-import * as userRepository from '../repository/user';
+import * as userRepository from '../repositories/user';
 import * as jwt from '../jwt';
 
 export const signup = (req, res) => {
